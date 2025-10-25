@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="dev.lchang.appue" />
+                  <option name="mobileSdkAppId" value="1:670644831961:android:976ccad352b5ce225ba0c8" />
+                  <option name="projectId" value="vcarbajal-firebase-2025" />
+                  <option name="projectNumber" value="670644831961" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

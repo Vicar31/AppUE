@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -25,11 +26,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
 import dev.lchang.appue.data.local.AppDatabase
 import dev.lchang.appue.data.local.FavoriteCountryEntity
 import dev.lchang.appue.data.model.CountryModel
+import dev.lchang.appue.data.remote.firebase.FirebaseAuthManager
 import dev.lchang.appue.data.repository.FavoriteRepository
 import dev.lchang.appue.presentation.components.CountryList
 import dev.lchang.appue.presentation.favorites.FavoritesViewModel
@@ -45,7 +48,7 @@ val mockCountries = listOf(
 )
 
 @Composable
-fun HomeScreen()
+fun HomeScreen(navController: NavController)
 {
     val context = LocalContext.current
     val db = remember { AppDatabase.getInstance(context) }
